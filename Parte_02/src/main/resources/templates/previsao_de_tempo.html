@@ -23,7 +23,8 @@ rel="stylesheet"/>
 				<input type="text" class="form-control" placeholder="Descrição" th:field="*{tex}"/>
 				<input type="text" class="form-control" placeholder="Latitude" th:field="*{lat}"/>
 				<input type="text" class="form-control" placeholder="Longitude" th:field="*{lon}"/>
-				<input type="text" class="form-control" placeholder="Data/Hora" th:field="*{dat}"/>
+				<input type="text" class="form-control" placeholder="Data" th:field="*{dat}"/>
+				<input type="text" class="form-control" placeholder="Hora" th:field="*{hor}"/>
 				
 				<button type="submit" class="btn btn-primary">Adicionar</button>
 			</div>
@@ -39,7 +40,8 @@ rel="stylesheet"/>
 						<th>Descrição</th>
 						<th>Latitude</th>
 						<th>Longitude</th>
-						<th>Data/Hora</th>
+						<th>Data</th>
+						<th>Hora</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -52,6 +54,7 @@ rel="stylesheet"/>
 						<td th:text="${tempo.lat}"></td>
 						<td th:text="${tempo.lon}"></td>
 						<td th:text="${tempo.dat}"></td>
+						<td th:text="${tempo.hor}"></td>
 						
 					</tr>
 				</tbody>
